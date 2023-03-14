@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    min-width: 100vw;
+
+    padding-bottom: 120px;
+    font-family: Work Sans;
+}
+
+@layer base {
+    .container {
+        @apply mx-auto w-full max-w-6xl px-8;
+    }
+}
+
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration {
+    display: none;
+}
+
+.nav-link {
+    @apply py-[14px] px-4 text-sm font-medium uppercase leading-[150%] tracking-[0.5px] transition-colors duration-300 ease-in hover:text-[#014e37];
+}

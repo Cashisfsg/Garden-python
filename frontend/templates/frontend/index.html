@@ -1,0 +1,90 @@
+{% extends 'frontend/base.html' %} {% load static %} {% block content %}
+<article class="relative">
+    <img
+        class="object-cover"
+        src="{% static 'img/31.webp' %}"
+    />
+    <section
+        class="absolute right-[3%] top-0 flex h-full w-[43%] flex-col justify-center text-[#4f583d]"
+    >
+        <p class="text-sm capitalize tracking-[1px]">New Arrival 2021</p>
+        <h2
+            class="text-medium mb-5 text-[38px] font-semibold capitalize leading-[48px] tracking-[2px] text-black"
+        >
+            New Perfect Plant Collection
+        </h2>
+        <p class="mb-10 text-base leading-[25px] tracking-[0.5px]">
+            There or are many the variations of passages of Lorem Ipsum or
+            available, but the majority have but the majority have suffered
+            alteration...
+        </p>
+        <a
+            class="w-max rounded bg-[#014e37] py-[10px] px-6 text-sm uppercase text-white transition-colors duration-300 hover:bg-black"
+            href="#"
+            >shop now</a
+        >
+    </section>
+</article>
+<section class="container grid grid-cols-3 gap-8">
+    <div
+        class="relative"
+        href="#"
+    >
+        <img
+            class="object-cover"
+            src="{% static 'img/33.webp' %}"
+            alt=""
+        />
+        <div class="absolute left-[8%] top-1/2 -translate-y-1/2">
+            <p class="mb-[2px] text-sm uppercase leading-[15px] text-[#404040]">
+                fresh flower
+            </p>
+            <p class="mb-4 text-xl font-medium capitalize tracking-[0.5px]">
+                Hanging plant
+            </p>
+            <a
+                class="color-[#014e37] text-sm uppercase leading-[17px]"
+                href="#"
+            >
+                shop now
+            </a>
+        </div>
+    </div>
+    <a
+        class="object-cover"
+        href="#"
+    >
+        <img
+            src="{% static 'img/34.webp' %}"
+            alt=""
+        />
+        <div class="absolute left-[8%] top-1/2 -translate-y-1/2">
+            <span
+                class="mb-[2px] text-sm uppercase leading-[15px] text-[#404040]"
+            ></span>
+            <span
+                class="mb-4 text-xl font-medium capitalize tracking-[0.5px]"
+            ></span>
+            <a class="color-[#014e37] text-sm leading-[17px] underline"></a>
+        </div>
+    </a>
+    <a
+        class="object-cover"
+        href="#"
+    >
+        <img
+            src="{% static 'img/35.webp' %}"
+            alt=""
+        />
+        <div class="absolute left-[8%] top-1/2 -translate-y-1/2">
+            <span
+                class="mb-[2px] text-sm uppercase leading-[15px] text-[#404040]"
+            ></span>
+            <span
+                class="mb-4 text-xl font-medium capitalize tracking-[0.5px]"
+            ></span>
+            <a class="color-[#014e37] text-sm leading-[17px] underline"></a>
+        </div>
+    </a>
+</section>
+{% endblock %}
